@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <p>main</p>
+<div id="pai-quiz"></div>
+
+<script src="{{ asset('js/index') }}"></script>
 @endsection

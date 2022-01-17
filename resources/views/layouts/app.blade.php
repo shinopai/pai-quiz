@@ -56,14 +56,14 @@
                     </li>
                     @else
                     <li class="mr-3">
-                        <a class="inline-block text-white no-underline py-2 px-4" href="#">{{ Auth::user()->name }}</a>
+                        <a class="inline-block text-white no-underline py-2 px-4" href="#">{{ Auth::user()->name }}&nbsp;さん</a>
                     </li>
                     @endguest
                 </ul>
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 w-11/12 mx-auto my-5">
             @yield('content')
         </main>
 
@@ -75,7 +75,14 @@
                             Copyright PaiQuiz © 2022
                         </div>
                     </div>
+                    <div></div>
                 </footer>
+                @auth
+                <a href="#" class="block text-right mr-5 mb-3 text-white font-bold" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                <form action="{{ route('logout') }}" method="post" id="logout-form">
+                    @csrf
+                </form>
+                @endauth
             </div>
         </footer>
     </div>
