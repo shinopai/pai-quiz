@@ -10,13 +10,14 @@ import {
     faQuestionCircle,
     faBook,
     faChartBar,
-    faNewspaper
+    faNewspaper,
+    faSearch
 } from '@fortawesome/free-solid-svg-icons'
 import {
     FontAwesomeIcon
 } from '@fortawesome/vue-fontawesome'
 
-library.add(faQuestionCircle, faBook, faChartBar, faNewspaper)
+library.add(faQuestionCircle, faBook, faChartBar, faNewspaper, faSearch)
 
 const app = createApp(App)
 app.component('fa', FontAwesomeIcon)

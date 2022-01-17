@@ -3,7 +3,7 @@
     <canvas id="chart" class="absolute right-0 left-0 m-auto mt-24 bg-white p-5" width="400" height="400">
     </canvas>
     <span class="absolute right-0 left-0 top-10 block w-24 m-auto font-bold text-white">正答率:&nbsp;{{ percentage }}%</span>
-    <button class="absolute right-0 left-0 bottom-5 m-auto px-2 py-2 mt-5 rounded-lg font-bold bg-blue-500 text-white cursor-pointer" @click="quizDone">終了する</button>
+    <button class="absolute right-0 left-0 bottom-5 ml-2 lg:m-auto px-2 py-2 mt-5 rounded-lg font-bold bg-blue-500 text-white cursor-pointer" @click="quizDone">終了する</button>
     </div>
 </template>
 

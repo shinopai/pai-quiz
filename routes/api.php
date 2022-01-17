@@ -19,3 +19,6 @@ Route::get('/rankings', 'RankingController@getRanking');
 
 // get all informations
 Route::get('/informations', 'InformationController@getAllInformations');
+
+// get keywords
+Route::get('/keywords', 'KeywordController@getKeywords');

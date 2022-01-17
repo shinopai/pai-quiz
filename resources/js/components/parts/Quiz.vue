@@ -163,7 +163,9 @@ export default {
     const goNext = () => {
       isAnswered.value = false
       resultMessage.value = ''
+      answer.value = ''
       currentQuizNum.value += 1
+      window.scroll({top: 200, behavior: 'instant'})
     }
 
     // go to see your percentage_correct_answer

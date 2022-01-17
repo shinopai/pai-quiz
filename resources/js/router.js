@@ -2,6 +2,7 @@ import {
     createRouter,
     createWebHistory
 } from "vue-router";
+import scrollBehavior from "./scrollBehavior";
 import Main from './components/parts/Main.vue';
 import Quiz from './components/parts/Quiz.vue';
 import Keyword from './components/parts/Keyword.vue';
@@ -37,6 +38,7 @@ const routes = [{
 
 const router = createRouter({
     history: createWebHistory(),
+    scrollBehavior,
     routes
 })
 

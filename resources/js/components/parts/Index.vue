@@ -1,10 +1,10 @@
 <template>
-  <div id="container" className="flex flex-col">
-    <div id="main" className="flex flex-col md:flex-row flex-grow">
-        <div className="p-4 w-3/5">
+  <div id="container" class="lg:flex lg:flex-col">
+    <div id="main" class="flex flex-col lg:flex-row flex-grow">
+        <div class="p-4 lg:w-3/5">
             <router-view></router-view>
         </div>
-        <div className="p-4 w-2/5">
+        <div class="p-4 lg:w-2/5">
             <Sidebar />
         </div>
     </div>

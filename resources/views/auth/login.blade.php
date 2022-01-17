@@ -3,7 +3,7 @@
 @section('content')
 <div class="w-full min-h-screen bg-gray-50 flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
     <div class="w-full sm:max-w-md p-5 mx-auto">
-        <h2 class="mb-12 text-center text-5xl font-extrabold">ログイン</h2>
+        <h2 class="mb-12 text-center text-2xl lg:text-5xl font-extrabold">ログイン</h2>
         <form action="{{ route('login') }}" method="POST" novalidate>
             @csrf
             <div class="mb-4">

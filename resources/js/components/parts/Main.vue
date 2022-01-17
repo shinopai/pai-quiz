@@ -7,7 +7,7 @@
     </section>
     <section class="mt-5">
     <h2 class="text-xl border-b-2 border-gray-500 pb-3"><fa icon="book" />&nbsp;出題設定</h2>
-    <ul class="mt-3 flex gap-3 items-center justify-start">
+    <ul class="mt-3 flex flex-wrap gap-2 lg:gap-3 items-center justify-start">
     <li v-for="category in allCategories" :key="category">
       <input type="checkbox" v-model="categories" :value="category.name" :id="category.name">
       <label :for="category.name">{{ category.name }}</label>

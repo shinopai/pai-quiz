@@ -12,4 +12,8 @@ class Category extends Model
     public function quizzes(){
         return $this->hasMany('App\Quiz');
     }
+
+    public function keywords(){
+        return $this->hasMany('App\Keyword');
+    }
 }
