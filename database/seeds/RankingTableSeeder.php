@@ -11,6 +11,6 @@ class RankingTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Ranking::class, 10)->create();
+        factory(\App\Ranking::class, 20)->create();
     }
 }
